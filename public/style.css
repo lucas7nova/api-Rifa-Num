@@ -1,0 +1,120 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* Estilo do Quadro de Números */
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 5px;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.number {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.number.red {
+  background-color: #e74c3c;
+}
+
+/* Estilo do Formulário */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+/* Estilo das Mensagens de Erro */
+#errorMessage,
+#loginErrorMessage {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Estilo da Lista de Dados Armazenados */
+.stored-data {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stored-data ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stored-data li {
+  background-color: #ecf0f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Ocultar a seção de dados até o login */
+.hidden {
+  display: none;
+}
